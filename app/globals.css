@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: linear-gradient(
+    154.29deg,
+    #0a1222 3.27%,
+    #230a33 30.79%,
+    #0b1d35 75.38%,
+    #0a1222 101.95%
+  );
   --foreground: #171717;
+}
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-laptop: 1600px;
+  --breakpoint-tablet: 1280px;
+  --breakpoint-mobile: 768px;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
+
+/* Основные брейк поинты: 
+   1600px
+   1279px
+   767px
+
+   Отдельная верстка для разрешений:
+   1. 1920-1600 xl dekstop
+   2. 1599-1280 dekstop
+   3. 1279-768 tablet
+   4. 768-365 mobile
+
+   То есть вёрстка должна полностью помещаться в:
+   1. 1599px - верстка становится для ноутов, до этого она большая
+   2. 1279px - верстка становится для планшетов, до этого она средняя
+   3. 767px - верстка становится для мобилок, до этого она маленькая 
+   4. 365px
+*/

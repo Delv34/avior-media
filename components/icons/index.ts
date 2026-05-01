@@ -1,0 +1,15 @@
+export { default as Action } from "./Action";
+export { default as ArrowRight } from "./ArrowRight";
+export { default as Browser } from "./Browser";
+export { default as BurgerMenu } from "./BurgerMenu";
+export { default as Download } from "./Download";
+export { default as Fantasy } from "./Fantasy";
+export { default as Gamepad } from "./Gamepad";
+export { default as Mmorpg } from "./Mmorpg";
+export { default as Online } from "./Online";
+export { default as RoundArrowRight } from "./RoundArrowRight";
+export { default as RoundedArrow } from "./RoundedArrow";
+export { default as Search } from "./Search";
+export { default as Shooter } from "./Shooter";
+export { default as Strategy } from "./Strategy";
+export { default as War } from "./War";

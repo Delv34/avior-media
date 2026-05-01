@@ -1,18 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Тестовое задание для Avior Media
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Реализована только главная страница. Целью было сделать адаптив под все устройства, имея только макет для экранов FullHD 1920px
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
